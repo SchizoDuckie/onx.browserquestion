@@ -28,7 +28,7 @@ if(isset($_GET) && isset($_GET['action']) && $_GET['action'] =='store') {
 <link rel="stylesheet" href="style.css">
 <?php 
 
-if(empty($_GET) && empty($_POST)) {   
+if((empty($_GET) || isset($_GET['q'])) && empty($_POST)) {   
 
 ?>
 
